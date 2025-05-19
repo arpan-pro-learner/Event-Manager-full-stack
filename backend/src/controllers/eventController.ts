@@ -12,7 +12,7 @@ export const createEvent = async (req: Request, res: Response) => {
     }
     
     const newEvent = await EventModel.createEvent({
-      name,
+      name: name || '',
       description: description || '',
       date: new Date(date),
       location: location || ''

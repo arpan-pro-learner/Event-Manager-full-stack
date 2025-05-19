@@ -13,7 +13,8 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:3000', // Update with your frontend URL
+  // origin: 'http://localhost:3000', // Update with your frontend URL
+  origin: 'https://event-manager-backend-qqs5.onrender.com', // Update with your frontend URL
   methods: ['GET', 'POST', 'DELETE', 'PUT'],
   credentials: true, 
 }));
