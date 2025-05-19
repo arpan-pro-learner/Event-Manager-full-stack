@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 5000;
 
 // Allow CORS from localhost:3000
 app.use(cors({
-  origin: 'https://event-manager-full-stack.vercel.app/', // 👈 Use your actual frontend domain
+  origin: 'https://event-manager-full-stack.vercel.app', // 👈 Use your actual frontend domain
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
