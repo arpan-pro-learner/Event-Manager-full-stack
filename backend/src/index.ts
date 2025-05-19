@@ -11,13 +11,15 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middleware
+
+
+// Allow CORS from localhost:3000
 app.use(cors({
-  // origin: 'http://localhost:3000', // Update with your frontend URL
-  origin: 'https://event-manager-backend-qqs5.onrender.com', // Update with your frontend URL
-  methods: ['GET', 'POST', 'DELETE', 'PUT'],
-  credentials: true, 
+  origin: 'https://event-manager-full-stack.vercel.app/', // 👈 Use your actual frontend domain
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
 }));
+
 
 app.use(helmet());
 
