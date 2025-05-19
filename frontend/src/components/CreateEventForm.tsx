@@ -18,7 +18,7 @@ export default function CreateEventForm({ onEventCreated }: { onEventCreated?: (
     const eventData = { name, description, date, location };
 
     try {
-      const res = await fetch("http://localhost:5000/api/events", {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/events`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(eventData),

@@ -17,7 +17,7 @@ export default function EventDetails({ eventId }: { eventId: string }) {
   useEffect(() => {
     const fetchEvent = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/events/${eventId}`);
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/events/${eventId}`);
         const data = await res.json();
         setEvent(data);
       } catch (err) {

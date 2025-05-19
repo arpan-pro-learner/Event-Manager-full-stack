@@ -10,7 +10,7 @@ export default function ApplyForm({ eventId }: { eventId: number }) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
- const res = await fetch(`http://localhost:5000/api/events/${eventId}/register`, {
+ const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/events/${eventId}/register`, {
   method: "POST",
   headers: {
     "Content-Type": "application/json",

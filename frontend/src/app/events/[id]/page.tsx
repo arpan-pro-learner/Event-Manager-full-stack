@@ -21,7 +21,7 @@ export default function EventDetailPage() {
     if (!id) return;
     const fetchEvent = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/events/${id}`);
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/events/${id}`);
         const data = await res.json();
         setEvent(data);
       } catch (error) {

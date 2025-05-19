@@ -22,7 +22,7 @@ export default function EventCard({
   const handleDelete = async () => {
     if (!confirm("Are you sure you want to delete this event?")) return;
     try {
-      const res = await fetch(`http://localhost:5000/api/events/${id}`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/events/${id}`, {
         method: "DELETE",
       });
       if (res.ok) {
