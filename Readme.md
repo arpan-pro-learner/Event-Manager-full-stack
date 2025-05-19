@@ -1,8 +1,8 @@
 # Event Manager Dashboard
 
 ## 🔗 Live Links
-- **Frontend (Vercel)**: https://your-frontend.vercel.app
-- **Backend (Render)**: https://your-backend.onrender.com
+- **Frontend (Vercel)**: https://event-manager-full-stack.vercel.app
+- **Backend (Render)**: https://event-manager-backend-qqs5.onrender.com/
 
 ## 📦 Features
 - Create & list events
